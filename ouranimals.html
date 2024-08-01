@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Google font Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--Google font Roboto slab-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+    <!--Google font Oswald-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Google font Raleway-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Link to add social Icons to footer-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Link to the javascript-->
+    <script src="script.js" defer></script>
+
+    <!--Link to css stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Hompage Daniel Broderick-->
+    <title>Our Animals</title>
+</head>
+<body>
+    <header> <!-- Header section -->
+        <img src="images/WebLogo.jpg" alt="logo" class="logo"> <!-- Logo -->
+
+        <div id="nav-container"> <!-- Navigation links -->
+            <a href="home.html">Homepage</a> <!-- Link to homepage -->
+            <a href="aboutus.html">About us</a> <!-- Link to about us -->
+            <a href="ouranimals.html">Our animals</a> <!-- Link to our animals -->
+            <a href="newsletter.html">Newsletter</a> <!-- Link to newsletter -->
+            <a href="testimonials.html">Testimonials</a> <!-- Link to testimonials -->
+            <a href="contactus.html">Contact us</a> <!-- Link to contact us -->
+        </div>
+
+        <div class="innerHeader"> <!-- Inner header for design -->
+            <h1 id="title">animal<span>Trust</span></h1> <!-- Website title -->
+            <p id="tagline">Caring for Your Companions... Where Our Pets Become Your Family</p> <!-- Tagline -->
+        </div>
+    </header>
+    
+    <div id="ourAnimalsMain"> <!-- Main content container -->
+        
+        <h3 class="ouranimalsh3">Please Click on us to find out more</h3> <!-- Heading -->
+
+        <div class="containerPet"> <!-- Container for pet images -->
+            <div class="pet"> <!-- Pet 1 -->
+                <img src="images/dogOne.jpg" alt="Dog One" class="imagePet" onclick="showText(this, 'Name: Floof\nAge: 3 years\nLoves hiding everyones food')"> <!-- Dog One image -->
+                <p class="petText"></p> <!-- Pet description -->
+            </div>
+            <div class="pet"> <!-- Pet 2 -->
+                <img src="images/dogTwo.jpg" alt="Dog Two" class="imagePet" onclick="showText(this, 'Name: Bailey\nAge: 2 years\nLoves being romantic')"> <!-- Dog Two image -->
+                <p class="petText"></p> <!-- Pet description -->
+            </div>
+            <div class="pet"> <!-- Pet 3 -->
+                <img src="images/dogThree.jfif" alt="Dog Three" class="imagePet" onclick="showText(this, 'Name: Max\nAge: 4 years\nLoves dressing up')"> <!-- Dog Three image -->
+                <p class="petText"></p> <!-- Pet description -->
+            </div>
+            <div class="pet"> <!-- Pet 4 -->
+                <img src="images/dogFour.jfif" alt="Dog Four" class="imagePet" onclick="showText(this, 'Name: Jaws\nAge: 5 years\nLoves to laugh')"> <!-- Dog Four image -->
+                <p class="petText"></p> <!-- Pet description -->
+            </div>
+            <div class="pet"> <!-- Pet 5 -->
+                <img src="images/dogFive.png" alt="Dog Five" class="imagePet" onclick="showText(this, 'Name: Frank-furter\nAge: 1 year\nLoves ketchup and mustard')"> <!-- Dog Five image -->
+                <p class="petText"></p> <!-- Pet description -->
+            </div>
+            <div class="pet"> <!-- Pet 6 -->
+                <img src="images/dogSix.jpg" alt="Dog Six" class="imagePet" onclick="showText(this, 'Name: Jerry\nAge: 30 years\nLoves acting silly')"> <!-- Dog Six image -->
+                <p class="petText"></p> <!-- Pet description -->
+            </div>
+        </div>
+    </div>
+
+    <footer> <!-- Footer section -->
+        <div class="footerIcons"> <!-- Social media icons -->
+            <a href="#" class="fa fa-facebook"></a> <!-- Facebook icon -->
+            <a href="#" class="fa fa-youtube"></a> <!-- YouTube icon -->
+            <a href="#" class="fa fa-google"></a> <!-- Google icon -->
+            <a href="#" class="fa fa-instagram"></a> <!-- Instagram icon -->
+        </div>
+        
+        <div class="footerNav"> <!-- Footer navigation links -->
+            <ul>
+                <li><a href="home.html">Homepage</a></li> <!-- Link to homepage -->
+                <li><a href="aboutus.html">About us</a></li> <!-- Link to about us -->
+                <li><a href="ouranimals.html">Our animals</a></li> <!-- Link to our animals -->
+                <li><a href="newsletter.html">Newsletter</a></li> <!-- Link to newsletter -->
+                <li><a href="testimonials.html">Testimonials</a></li> <!-- Link to testimonials -->
+                <li><a href="contactus.html">Contact us</a></li> <!-- Link to contact us -->
+            </ul>
+        </div>
+
+        <hr> <!-- Horizontal rule -->
+        <div class="footerBottom"> <!-- Footer bottom section -->
+            <p>Animal trust Ireland, 123 Lane Park Dublin</p> <!-- Company address -->
+            <p>Copyright &copy;2024; Designed by Darren, Shane & Daniel</p> <!-- Copyright notice -->
+        </div>
+    </footer>
+
+    <script>
+        function showText(img, text) { 
+            img.nextElementSibling.innerText = text;
+        }
+    </script>
+</body>
+</html>
