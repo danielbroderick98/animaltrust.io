@@ -1,0 +1,773 @@
+/*------------------------------------------------------------Start of Header and Footer Section------------------------------------------------------------*/
+
+/*Body section*/
+body{
+    background-color: lightgrey;
+}
+
+/*Header section*/
+header{
+    /*text-align: center;*/
+    background-color: #4fb28f;
+    /*background-color: #ebf0ea;*/
+    height: 100px;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+/*Nav in header bar*/
+header a {
+    /*Google font Roboto*/
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    /*Removing the default underline */
+    text-decoration: none;
+    /*Seperates the <a> tags*/
+    margin-right: 20px; 
+}
+
+/*Nav in header bar when hovered*/
+header a:hover {
+    /*Changing the color to blue when specific <a> is clicked on*/
+    color: #4fb28f;
+}
+
+/*Footer section*/
+footer{
+    background-color: #4fb28f;
+    padding: 10px; 
+}
+
+/*Title in header*/
+#title{
+    /*Google font Roboto*/
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: black;
+    margin-left: 110px;
+}
+
+/*Designing "Trust"*/
+ .innerHeader h1 span{
+    font-weight: 800;
+    color: #4fb28f;
+ }
+
+/*Tagline in header*/
+#tagline{
+    text-align: center;
+    /*Google font Roboto*/
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #4fb28f;
+
+}
+
+/*Logo in header*/
+.logo{
+    width: 100px;
+    height: 100px;
+    float: left;
+    position: absolute;
+    /* Aligns to the bottom of header */
+    bottom: 0;
+    left: 0;
+}
+
+/*Navigation bar when fixed*/
+#nav-container {
+    /*Fixed so that it doesnt move when scrolling*/
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%; 
+    text-align: right; 
+    padding: 5px;
+    top: 0;
+    right: 0;
+}
+
+/*Designing the footer section*/
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li a{
+    color: #ffffff;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    /*Google font Roboto slab*/
+    font-family: "Roboto Slab", serif;
+}
+
+.footerNav ul li a:hover{
+    color: black;
+    /*Font size will get larger when hovered*/
+    font-size: 1.4em;
+    /*Google font Roboto slab*/
+    font-family: "Roboto Slab", serif;
+}
+
+.footerBottom{
+    text-align: center;
+    bottom: 0;
+    /*Google font Roboto slab*/
+    font-family: "Roboto Slab", serif;
+    font-size: 0.8em;
+}
+
+.footerIcons{
+    justify-content: center;
+    text-align: center;
+}
+
+.footerIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ffffff;
+    margin: 10px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    color: #4fb28f;
+}
+
+.footerIcons a:hover{
+    font-size: 1.7em;
+    color: black;
+}
+
+/*Designing the inner header*/
+.innerHeader{
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+}
+
+/*------------------------------------------------------------End of Header and Footer Section------------------------------------------------------------*/
+
+/*------------------------------------------------------------Media Queries Imported from Bootstrapv------------------------------------------------------------*/
+
+@media (max-width: 845px) {
+    /*Making the font smaller on the list in the footer*/
+    .footerNav ul li a{
+        color: #ffffff;
+        margin: 20px;
+        text-decoration: none;
+        font-size: 0.7em;
+        /*Google font Roboto slab*/
+        font-family: "Roboto Slab", serif;
+    }
+}
+
+@media (max-width: 725px) {
+    /*Making the font smaller and the margin between the text 10px*/
+    /*Nav in header bar*/
+    header a {
+        /*Google font Roboto*/
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: black;
+        /*Removing the default underline */
+        text-decoration: none;
+        /*Seperates the <a> tags*/
+        margin-right: 10px; 
+        font-size: 0.7em;
+    }
+
+    /*Making the tagline smaller, floating it right and adding padding to the right*/
+    #tagline{
+        text-align: right;
+        /*Google font Roboto*/
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        color: #4fb28f;
+        font-size: 0.7em;
+        padding-right: 5px;
+    }
+}
+
+@media (max-width: 630px){
+    /*Making the margin smaller*/
+    .footerNav ul li a{
+        color: #ffffff;
+        margin: 5px;
+        text-decoration: none;
+        font-size: 0.7em;
+        /*Google font Roboto slab*/
+        font-family: "Roboto Slab", serif;
+    }
+
+    /*Making the font size smaller*/
+    #main{
+        height: 1350px;
+        width: 100%;
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 670px){
+    #main{
+        height: 1350px;
+        width: 100%;
+        font-size: 0.7em;
+    }
+    #newsletterbody{
+        width: 100%;
+        font-size: 0.7em;
+    }
+}
+
+/*------------------------------------------------------------End of Media Queries------------------------------------------------------------*/
+
+/*------------------------------------------------------------Start of Main Content Daniel Broderick------------------------------------------------------------*/
+
+#main{
+    /*background-color:;*/
+    height: 1350px;
+    width: 100%;
+}
+
+/*editing the heading image*/
+#headImg{
+    border: 2px solid black;
+    border-radius: 15px; /* Adding rounded edges */
+    width: 66%;
+    margin: 0px auto;
+    height: 10%;
+}
+
+/*editing the heading image*/
+#imgPets{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover; 
+}
+
+/*editing the homeDiv*/
+#homeDiv{
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #ffffff; 
+    border-radius: 15px; /* Adding rounded edges */
+    width: 65%;
+    height: auto;
+    margin: 0px auto; /* Centering the box with auto margin */
+}
+
+/*editing the h1 home text*/
+#home{
+    font-size: 3em;
+    color: #4fb28f;
+    /*Google font Oswald*/
+    font-family: "Oswald", sans-serif;
+    background-color: lightgrey;
+    border-radius: 15px; /* Adding rounded edges */
+    border: 2px solid #4fb28f;
+    width: 95%;
+    margin: 0px auto; /* Centering the box with auto margin */
+}
+
+/*parHome text*/
+#paraHome{
+    color: black;
+    /*Google font Raleway*/
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+/*More about us button*/
+#aboutUsMore{
+    /*Using flexbox to align it at the start of the cross axis*/
+    padding: 12px 32px;
+    font-size: 1em;
+    background-color: #4fb28f;
+    border-radius: 4px;
+    margin-top: 4%;
+}
+
+/*The link text in the about us*/
+#aboutUsMoreLnk{
+    color: #4fb28f;
+    padding: 10px;
+    font-size: larger;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+
+/*Donate Main Content Section*/
+#donateMain{
+    text-align: center;
+    background-color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    border: 2px solid black;
+    padding: 10px;
+    background-color: #ffffff; 
+    border-radius: 15px; /* Adding rounded edges */
+    width: 65%;
+    margin: 0px auto; /* Centering the box with auto margin */
+}
+
+#htDonate{
+    display: flex;
+    justify-content: center;
+}
+
+#email{
+    width: 30%;
+}
+
+#amount{
+    width: 30%;
+}
+
+#donateBtn{
+    padding: 12px 32px;
+    font-size: 1em;
+    background-color: #4fb28f;
+    border-radius: 4px;
+    margin-top: 4%;
+    color: #ffffff;
+    /*Google font Raleway*/
+    font-family: "Raleway", sans-serif;
+}
+
+#donateAction{
+    background-color: #ffffff;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 4%;
+    padding-left: 4%;
+    background-color: lightgray;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+#donateBtn:hover{
+    cursor: pointer;
+}
+
+#donateConfirm{
+    text-align: center;
+    /*Google font Raleway*/
+    font-family: "Raleway", sans-serif;
+}
+
+/*------------------------------------------------------------End of Main Content Daniel Broderick------------------------------------------------------------*/
+
+/*------------------------------------------------------------Start of About Us Content Daniel Broderick------------------------------------------------------------*/
+
+#aboutusMain {
+    background-image: url('../images/petsbackground.jpg'); /* Adding background image from folder*/
+    background-position: center; /* Center the background image */
+    background-color: #515654;
+    width: 100%;
+    padding: 20px 0; /* Adds padding to the top and bottom */
+    box-sizing: border-box; /* Ensures padding is included in width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+}
+
+/* Styling the photo */
+#helpAnimals {
+    display: block;
+    margin: 20px auto; /* Adds margin for spacing */
+    width: 60%;
+    max-width: 600px; /* Limits the width for large screens */
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners */
+}
+
+/* wwd = What we do section div */
+#wwd {
+    text-align: center;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    margin: 20px auto; /* Adds margin for spacing */
+    padding: 20px;
+    max-width: 800px; /* Limits the width */
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a background for better text visibility */
+    border-radius: 10px; /* Adds rounded corners */
+}
+
+/* Trivia section */
+#RanGame {
+    text-align: center;
+    margin: 20px auto; /* Adds margin for spacing */
+    padding: 20px;
+    max-width: 800px; /* Limits the width */
+    background-color: #ffffff;
+    color: #4fb28f;
+    font-family: "Roboto", sans-serif;
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for emphasis */
+}
+
+#question {
+    color: black;
+    margin-bottom: 15px; /* Adds spacing below the question */
+}
+
+#playBtn, #enter, #playAgain {
+    display: inline-block;
+    margin: 10px 5px; /* Adds spacing around the buttons */
+    padding: 10px 20px;
+    background-color: #4fb28f;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    border: none;
+    border-radius: 5px; /* Adds rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+#playBtn:hover, #enter:hover, #playAgain:hover {
+    background-color: #3e9273; /* Changes button color on hover */
+}
+
+#answer {
+    margin: 15px auto; /* Adds margin for spacing */
+    padding: 10px;
+    width: 80%;
+    max-width: 500px; /* Limits the input width */
+    border: 1px solid #ddd;
+    border-radius: 5px; /* Adds rounded corners */
+    font-size: 16px; /* Increases font size */
+}
+
+/*------------------------------------------------------------End of About Us Content Daniel Broderick------------------------------------------------------------*/
+
+/*------------------------------------------------------------Start of Our Animals Darren Walsh------------------------------------------------------------*/
+
+#ourAnimalsMain {
+    background-image: url('../images/petsbackground.jpg'); /* Adding background image from folder */
+    background-position: center; /* Center image */
+    padding: 20px; 
+}
+
+.containerPet {
+    width: 100%; /* Full width of the container */
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Wrap items (goes to next line of container */
+    gap: 20px; /* between images */
+}
+
+/* Individual pet container */
+.pet {
+    text-align: center; /* Center the text */
+    width: calc(33.333% - 20px); /* Width of each pet container (split in 3 cause of 3 images) */
+    margin-bottom: 20px;
+}
+
+/* Individual images */
+.imagePet {
+    width: 300px;
+    height: 300px; 
+    object-fit: cover; /* maintains images integrity in regards to size and output */
+    cursor: pointer; /* Adds Pointer cursor when hover */
+    border-radius: 15px;
+}
+
+/* text below the images */
+.petText {
+    margin-top: 10px; /* Space between image and beginning of text */
+    font-size: 20px; 
+    font-weight: bold; 
+    color: black;
+}
+
+.ouranimalsh3 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+/*------------------------------------------------------------End of Our Animals Darren Walsh------------------------------------------------------------*/
+
+/*------------------------------------------------------------Start of Newsletter Darren Walsh------------------------------------------------------------*/
+
+/* Form Container */
+#newslettersMain {
+    max-width: 600px; /* Limit form width */
+    margin: 40px auto; /* Center content */
+    padding: 20px; /* Add padding inside the container */
+    background-color: white; /* White background for form */
+    border-radius: 8px; 
+}
+
+body.newsletterBody {
+    background-image: url('../images/petsbackground.jpg'); /* Adding background image from folder */
+}
+
+h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+form {
+    display: flex; /* flex layout */
+    flex-direction: column; /* Stack input fields vertically*/
+    gap: 15px; /* Space between input fields*/
+}
+
+label {
+    font-weight: bold;
+    color: #4fb28f;
+    font-family: "Roboto", sans-serif;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+select {
+    padding: 12px; /* Padding inside input fields */
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px; /* Space to right of checkbox */
+}
+
+button[type="submit"] {
+    padding: 24px; /* Padding inside button */
+    background-color: #4fb28f; 
+    color: white; /* Text color */
+    border: none; 
+    border-radius: 4px;
+    font-size: 1em; /* Consistent font size */
+    font-family: "Raleway", sans-serif; 
+}
+
+button[type="submit"]:hover {
+    background-color: #3d9373; /* chnage colour of button when hovered */
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .containerPet {
+        flex-direction: column; /* Allign items vertically */
+        align-items: center; 
+    }
+
+    .pet {
+        width: 100%; 
+        margin-bottom: 20px; /* Space below each container */
+    }
+
+    .imagePet {
+        width: 90%; /* Adjust image width for small screen */
+        height: auto; /* Maintain ratio throughout resizing*/
+    }
+}
+/*------------------------------------------------------------End of Newsletter Darren Walsh------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------Start of testimonials Shane Farrell------------------------------------------------------------*/
+
+/* Testimonials Container */
+.testimonials-container {
+    background-image: url('../images/petsbackground.jpg'); /* Adding background image from folder */
+    display: flex; /* Use flex for layout */
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px; /* Space between testimonials */
+    align-items: center; /* Allign center */
+  
+}
+
+/* Each Testimonial */
+.testimonial {
+    display: flex; /* flex for layout */
+    align-items: center; 
+    justify-content: flex-start; /* Aligns content to the start */
+    border: 1px solid #ddd; 
+    padding: 20px;
+    background-color: #fff; 
+    border-radius: 8px; 
+    width: 100%; /* Full width of container */
+    max-width: 800px; /*limit maximum width */
+}
+
+/* Testimonial Person and Animal Photos */
+.testimonial-person-photo,
+.testimonial-animal-photo {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 50%; /* 50% creating a circle */
+    margin-right: 20px; /* Space between image and text */
+}
+
+/* Testimonial Text */
+.testimonial-text {
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+
+/* Testimonial Rating */
+.testimonial-rating .fa-star {
+    color: #ddd; 
+    margin-right: 2px; /* Space between stars */
+}
+
+.testimonial-rating .fa-star.checked {
+    color: #f5b301; /* Colour of checked stars */
+}
+
+/* Add Testimonial Form */
+.add-testimonial {
+    background-color: #fff; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    margin: 20px auto; /* Center horizontally */
+    width: 90%; /* Adjust width as needed */
+    max-width: 600px; /* Limit maximum width */
+}
+
+/* Add Testimonial Form Elements */
+.add-testimonial label {
+    display: block; /* Block display */
+    margin-bottom: 8px; 
+    font-weight: bold;
+}
+
+.add-testimonial input,
+.add-testimonial textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+}
+
+.add-testimonial input[type="file"] {
+    padding: 3px; /* Padding for file input */
+}
+
+.add-testimonial input[type="submit"] {
+    background-color: #4fb28f; 
+    color: #fff; 
+    border: none; 
+    padding: 10px; 
+    border-radius: 4px; 
+    cursor: pointer; /* Pointer on hover */
+}
+
+.add-testimonial input[type="submit"]:hover {
+    background-color: #3a9a77; /* Darker green when hovered */
+}
+
+/*------------------------------------------------------------End of testimonials Shane Farrell------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------Start of Contact Us Shane Farrell------------------------------------------------------------*/
+
+.contactuscontainer {
+    text-align: center;
+    font-weight: bold;
+    background-image: url('../images/petsbackground.jpg'); /* Adding background image from folder */
+    background-position: center; /* Center image within the container */
+}
+/* Contact Form Container */
+.contact-form-container {
+    background-color: #fff; 
+    padding: 20px; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    margin: 20px auto; 
+    width: 90%; /* Adjust width as needed */
+    max-width: 600px; /* Limit maximum width */
+}
+ 
+/* Contact Form Elements */
+.contact-form-container form label {
+    display: block; 
+    margin-bottom: 8px;
+    font-weight: bold; 
+}
+ 
+.contact-form-container form input,
+.contact-form-container form textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 4px; 
+}
+ 
+.contact-form-container form input[type="submit"] {
+    background-color: #4fb28f; 
+    color: #fff; 
+    border: none; 
+    padding: 10px; 
+    border-radius: 4px; 
+    cursor: pointer; /* Pointer on hover */
+}
+ 
+.contact-form-container form input[type="submit"]:hover {
+    background-color: #3a9a77; /* Darker green when hovered */
+}
+ 
+/* Contact Information */
+.contact-info {
+    margin: 20px auto; /* Center horizontally */
+    width: 90%; /* Adjust width as needed */
+    max-width: 600px;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {
+    font-family: "Roboto", sans-serif;
+}
+
+.contactuscontainer {
+    border: 1px solid lightgreen; /* Temporary border for debugging */
+}
+
+ 
+/* Responsive Adjustments */
+@media (max-width: 768px) { 
+    
+    .testimonial {
+        flex-direction: column; /* Stack testimonials vertically */
+        text-align: center; 
+    }
+   
+.testimonial-person,
+.testimonial-animal {
+    margin-bottom: 10px; /* Add space below each */
+}
+   
+.testimonial-person-photo,
+.testimonial-animal-photo {
+    width: 80px; /* Set width for smaller screens */
+    height: 80px; /* Set height for smaller screens */
+}
+
+.contact-info,
+.contact-form-container,
+.add-testimonial {
+    width: 100%; /* Full width for smaller screens */
+    margin: 10px;
+}
+}
